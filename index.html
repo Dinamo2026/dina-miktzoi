@@ -150,6 +150,9 @@
     *{animation:none!important;transition:none!important}
     .rv{opacity:1;transform:none}
   }
+  /* nothing moves on its own — only the viewer scrolls or swipes */
+  *,*::before,*::after{animation:none!important}
+  .rv{opacity:1!important;transform:none!important;transition:none!important}
 </style>
 </head>
 <body>
@@ -199,7 +202,7 @@
 
 <div class="golden rv">
   <div class="vid">
-    <video autoplay muted loop playsinline preload="metadata" poster="media/hero.jpg"><source src="media/hero.mp4" type="video/mp4"></video>
+    <img src="media/hero.jpg" alt="קבוצת רוכבים בדרך בין גבעות" style="width:100%;height:100%;object-fit:cover">
   </div>
   <div class="txt">
     <span class="kicker" style="color:#ffcf9e">הניסיון שלי</span>
